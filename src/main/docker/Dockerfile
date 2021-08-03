@@ -22,3 +22,4 @@ RUN mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 RUN chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 RUN zypper -n install dotnet-sdk-5.0
 RUN dotnet tool install --global dotnet-sonarscanner
+RUN export PATH="$HOME/.dotnet/tools:$PATH"
