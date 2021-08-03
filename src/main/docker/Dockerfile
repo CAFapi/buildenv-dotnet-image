@@ -21,5 +21,5 @@ RUN wget https://packages.microsoft.com/config/opensuse/15/prod.repo
 RUN mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 RUN chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 RUN zypper -n install dotnet-sdk-5.0
-RUN dotnet tool install --global dotnet-sonarscanner
-ENV PATH="/root/.dotnet/tools:$PATH"
+RUN dotnet tool install --tool-path=/dotnet/tools/ dotnet-sonarscanner
+ENV PATH="/dotnet/tools:$PATH"
