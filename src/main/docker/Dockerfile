@@ -1,5 +1,5 @@
 #
-# Copyright 2018-2021 Micro Focus or one of its affiliates.
+# Copyright 2021 Micro Focus or one of its affiliates.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,3 +21,5 @@ RUN wget https://packages.microsoft.com/config/opensuse/15/prod.repo
 RUN mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 RUN chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 RUN zypper -n install dotnet-sdk-5.0
+RUN dotnet tool install --tool-path=/dotnet/tools/ dotnet-sonarscanner
+ENV PATH="/dotnet/tools:$PATH"
