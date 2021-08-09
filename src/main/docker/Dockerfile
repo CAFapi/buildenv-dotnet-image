@@ -13,7 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-FROM cafapi/opensuse-jdk8-maven:1.0.0
+
+# Docker registry
+ARG DOCKER_HUB_PUBLIC=docker.io
+
+FROM ${DOCKER_HUB_PUBLIC}/cafapi/opensuse-jdk8-maven:1.0.0
 
 RUN zypper -n install libicu wget
 RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc
