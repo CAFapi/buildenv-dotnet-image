@@ -27,7 +27,7 @@
     <packaging>pom</packaging>
 
     <name>openSUSE DotNet image</name>
-    <description>An openSUSE-based image which includes DotNet version 5.</description>
+    <description>An openSUSE-based image which includes DotNet version 6.</description>
     <url>https://github.com/CAFapi/buildenv-dotnet-image</url>
 
     <parent>
