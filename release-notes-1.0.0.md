@@ -2,5 +2,6 @@
 ${version-number}
 
 #### New Features
+- Initial Release
 
 #### Known Issues
