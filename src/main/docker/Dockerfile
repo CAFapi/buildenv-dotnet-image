@@ -17,7 +17,7 @@
 # Docker registry
 ARG DOCKER_HUB_PUBLIC=docker.io
 
-FROM ${DOCKER_HUB_PUBLIC}/cafapi/buildenv-jdk8:1.0.0
+FROM ${DOCKER_HUB_PUBLIC}/cafapi/prereleases:buildenv-jdk8-2.0.0-SNAPSHOT
 CMD ["bash"]
 
 RUN zypper -n install libicu wget
