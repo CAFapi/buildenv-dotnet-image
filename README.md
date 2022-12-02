@@ -40,7 +40,7 @@ function buildenv-dotnet {
     -e HTTP_PROXY -e HTTPS_PROXY -e NO_PROXY \
     -e http_proxy -e https_proxy -e no_proxy \
     -w "$(pwd)" \
-    cafapi/prereleases:buildenv-dotnet-1.1.0-SNAPSHOT "$@";
+    cafapi/buildenv-dotnet:1.0.0 "$@";
 }
 ```
 
