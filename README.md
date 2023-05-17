@@ -1,4 +1,4 @@
-# DotNet 6 Build Environment Image
+# DotNet Build Environment Image
 
 This project builds a Docker image that contains the tooling necessary to build .NET projects.
 

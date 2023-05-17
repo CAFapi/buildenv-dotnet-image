@@ -25,6 +25,6 @@ RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc
 RUN wget https://packages.microsoft.com/config/opensuse/15/prod.repo
 RUN mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 RUN chown root:root /etc/zypp/repos.d/microsoft-prod.repo
-RUN zypper -n install dotnet-sdk-6.0
+RUN zypper -n install dotnet-sdk-7.0
 RUN dotnet tool install --tool-path=/dotnet/tools/ dotnet-sonarscanner
 ENV PATH="/dotnet/tools:$PATH"
