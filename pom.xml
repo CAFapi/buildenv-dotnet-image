@@ -98,8 +98,8 @@
                     <imageManagement>
                         <image>
                             <repository>${dockerHubPublic}/cafapi/buildenv-jdk17</repository>
-                            <tag>1.6.3</tag>
-                            <digest>sha256:769c4390274fd8a7bdf2f31231edd18537c2f33670b8378b2e2102b0d372e261</digest>
+                            <tag>1.7.0</tag>
+                            <digest>sha256:5723fa5e5dcaffe05bced445e2d05e23b7395cf08d25dabd8ca0f47411cb850a</digest>
                         </image>
                     </imageManagement>
                 </configuration>
